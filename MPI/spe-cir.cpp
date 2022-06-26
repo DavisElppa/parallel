@@ -43,7 +43,7 @@ public:
 bitmatrix *eliminer = new bitmatrix[col], *eline = new bitmatrix[elinenum], *pass = new bitmatrix[mpisize];
 void readdata() {
 	ifstream ifs;
-	ifs.open("D:\\VS项目\\mpi1\\x64\\Debug\\eliminer1.txt");  //消元子
+	ifs.open("D:\SpecialGauss\\eliminer1.txt");  //消元子
 	string temp;
 	while (getline(ifs, temp)) {
 		istringstream ss(temp);
@@ -56,7 +56,7 @@ void readdata() {
 	}
 	ifs.close();
 	ifstream ifs2;
-	ifs2.open("D:\\VS项目\\mpi1\\x64\\Debug\\eline1.txt");     //被消元行,读入方式与消元子不同
+	ifs2.open("D:\SpecialGauss\\eline1.txt");     //被消元行,读入方式与消元子不同
 	int trow = 0;
 	while (getline(ifs2, temp)) {
 		istringstream ss(temp);
