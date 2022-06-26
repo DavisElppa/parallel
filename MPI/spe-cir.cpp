@@ -8,7 +8,7 @@ using namespace std;
 const int col = 8399, elinenum = 4535, num_thread = 8, mpisize = 8;//列数、被消元行数
 int isupgrade;
 int tmp = 0;
-const int bytenum = (col - 1) / 32 + 1;   //每个实例中的byte型数组数
+const int bytenum = (col - 1) / 32 + 1;  
 class bitmatrix {
 public:
 	int mycol;    //首项
